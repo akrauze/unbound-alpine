@@ -19,7 +19,7 @@ docker run \
  --network=extnet \
  --ip=192.168.1.4 \
  --restart=unless-stopped \
- akrauze/unbound-alpine-edge:latest
+ ghcr.io/akrauze/unbound-alpine-edge:latest
 ```
 
 Make sure ``ip`` is available and excluded deom dhcp.
@@ -38,7 +38,7 @@ docker run \
  --ip=192.168.1.4 \
  --restart=unless-stopped \
  --volume=/home/me/unbound/unbound.conf:/etc/unbound/unbound.conf \
- akrauze/unbound-alpine-edge:latest
+ ghcr.io/akrauze/unbound-alpine-edge:latest
 ```
 On ``volume`` change ``/home/me/unbound/`` to the path you intent to have your config file on the host.
 
