@@ -1,6 +1,11 @@
 # unbound DNS on Alpine Linux Edge
 Unbound DNS resolver running on Alpine Linux Edge
 
+## Versions
+
+- ``lastest`` based on newest version of unbound available for the ``latest`` version of Alpine Linux at build time
+- ``edge`` based on newest version of unbound available for the ``edge`` version of Alpine Linux at build time
+
 ## Create macvlan network
 
 ```
@@ -19,7 +24,7 @@ docker run \
  --network=extnet \
  --ip=192.168.1.4 \
  --restart=unless-stopped \
- ghcr.io/akrauze/unbound-alpine-edge:latest
+ ghcr.io/akrauze/unbound-alpine:latest
 ```
 
 Make sure ``ip`` is available and excluded deom dhcp.
@@ -38,7 +43,7 @@ docker run \
  --ip=192.168.1.4 \
  --restart=unless-stopped \
  --volume=/home/me/unbound/unbound.conf:/etc/unbound/unbound.conf \
- ghcr.io/akrauze/unbound-alpine-edge:latest
+ ghcr.io/akrauze/unbound-alpine:latest
 ```
 On ``volume`` change ``/home/me/unbound/`` to the path you intent to have your config file on the host.
 
