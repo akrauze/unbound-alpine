@@ -35,7 +35,7 @@ docker run \
  ghcr.io/akrauze/unbound-alpine:latest
 ```
 
-Make sure ``ip`` is available and excluded deom dhcp.
+Make sure ``ip`` is available and excluded from dhcp
 
 ### Override configuration
 
