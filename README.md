@@ -6,6 +6,14 @@ Unbound DNS resolver running on Alpine Linux Edge
 - ``lastest`` based on newest version of unbound available for the ``latest`` version of Alpine Linux at build time
 - ``edge`` based on newest version of unbound available for the ``edge`` version of Alpine Linux at build time
 
+## Platforms
+- ``linux/amd64``
+- ``linux/arm64``
+- ``linux/arm/v7``
+
+- Q: Why not more platforms
+- A: Why more?
+
 ## Create macvlan network
 
 ```
