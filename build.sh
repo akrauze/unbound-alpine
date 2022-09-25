@@ -13,6 +13,6 @@ build() {
 	$CMD
 }
 
-build 1.15.0-r0 latest
+#build 1.15.0-r0 latest
 build 1.16.3-r0 edge
 
