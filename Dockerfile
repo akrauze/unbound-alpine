@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.source=https://github.com/akrauze/unbound-alpine
 LABEL org.opencontainers.image.description="Unbound on Alpine Edge"
 LABEL org.opencontainers.image.licenses=MIT
 
-ARG UNBOUND_VERSION=1.18.0-r0
+ARG UNBOUND_VERSION=1.19.3-r2
 ENV UNBOUND_PORT=53
 
 RUN apk update && apk add --no-cache unbound=$UNBOUND_VERSION curl drill ca-certificates \
